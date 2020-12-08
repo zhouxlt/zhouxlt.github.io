@@ -20,3 +20,17 @@ $ hexo g
 ``` bash
 $ hexo d
 ```
+## zhouxlt.github.io访问不了
+### ping域名，看到了ip
+``` bash
+$ ping zhouxlt.github.io
+```
+![ping zhouxlt.github.io结果图](ping域名结果图.png "ping域名")
+### 以太网Internet4协议配置
+![配置DNS服务器](以太网配置Internet4DNS服务器.png "配置DNS服务器")
+### 监测网络中DNS服务器是否能正确实现域名解析
+![监测域名解析](域名解析.png "监测域名解析")
+### 刷新DNS缓存
+![刷新DNS缓存](刷新DNS缓存.png "刷新DNS缓存")
+### 翻墙！！
+一顿操作~~~结果是因为要翻墙~~~
