@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://example.com/2020/12/10/package-management/</loc>
+    
+    <lastmod>2020-12-10</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://example.com/2020/12/04/gitpage-hexo-blog/</loc>
     
     <lastmod>2020-12-08</lastmod>
@@ -18,7 +25,7 @@
 
   <url>
     <loc>http://example.com/</loc>
-    <lastmod>2020-12-08</lastmod>
+    <lastmod>2020-12-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>

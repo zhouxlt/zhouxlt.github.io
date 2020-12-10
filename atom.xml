@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2020-12-08T02:15:16.233Z</updated>
+  <updated>2020-12-10T02:20:30.554Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>npm和yarn常见命令</title>
+    <link href="http://example.com/2020/12/10/package-management/"/>
+    <id>http://example.com/2020/12/10/package-management/</id>
+    <published>2020-12-10T01:33:29.000Z</published>
+    <updated>2020-12-10T02:20:30.554Z</updated>
+    
+    <content type="html"><![CDATA[<p>npm and yarn package management common command</p><h1 id="npm和yarn命令"><a href="#npm和yarn命令" class="headerlink" title="npm和yarn命令"></a>npm和yarn命令</h1><h2 id="查看版本"><a href="#查看版本" class="headerlink" title="查看版本"></a>查看版本</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm -v</span><br><span class="line">$ yarn -v</span><br></pre></td></tr></table></figure><h2 id="yarn安装"><a href="#yarn安装" class="headerlink" title="yarn安装"></a>yarn安装</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm i yarn -g</span><br></pre></td></tr></table></figure><h2 id="npm-yarn"><a href="#npm-yarn" class="headerlink" title="npm\yarn"></a>npm\yarn</h2><table><thead><tr><th align="center">npm</th><th align="center">yarn</th><th align="center">说明</th></tr></thead><tbody><tr><td align="center">npm init</td><td align="center">yarn init</td><td align="center">初始化某个项目</td></tr><tr><td align="center">npm install/link</td><td align="center">yarn/ yarn install</td><td align="center">默认的安装项目所有依赖</td></tr><tr><td align="center">npm install -S pkg@version</td><td align="center">yarn add pkg@version</td><td align="center">安装某个依赖包（dependencies）</td></tr><tr><td align="center">npm uninstall -S pkg@version</td><td align="center">yarn remove pkg@version</td><td align="center">移除某个依赖包</td></tr><tr><td align="center">npm install -D pkg@version</td><td align="center">yarn add pkg@version -D</td><td align="center">安装某个开发时（devDependencies）的依赖包</td></tr><tr><td align="center">npm update -S pkg@version</td><td align="center">yarn update pkg@version</td><td align="center">更新某个依赖包</td></tr><tr><td align="center">npm install –global/-g pkg@version</td><td align="center">yarn global add pkg@version</td><td align="center">安装某个全局依赖包（整个环境）</td></tr><tr><td align="center">npm run/test xxx</td><td align="center">yarn xxx</td><td align="center">运行某个命令</td></tr><tr><td align="center">npm run serve</td><td align="center">yarn serve</td><td align="center">本地编译运行命令</td></tr><tr><td align="center">npm info pkg</td><td align="center">yarn info pkg</td><td align="center">显示某个pkg包信息</td></tr><tr><td align="center">npm list</td><td align="center">yarn list</td><td align="center">列出项目的所有依赖</td></tr><tr><td align="center">npm config</td><td align="center">yarn config</td><td align="center">管理 yarn 配置文件</td></tr><tr><td align="center">npm config list</td><td align="center">yarn config list</td><td align="center">显示当前配置</td></tr></tbody></table><h3 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h3><p>在package.json中的两个字段：<br>dependencies：是在生产环境中运行需要的安装包<br>devDependencies：是在开发环境中需要安装的依赖包</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;npm and yarn package management common command&lt;/p&gt;
+&lt;h1 id=&quot;npm和yarn命令&quot;&gt;&lt;a href=&quot;#npm和yarn命令&quot; class=&quot;headerlink&quot; title=&quot;npm和yarn命令&quot;&gt;&lt;/a&gt;np</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Github Pages + Hexo 搭建个人博客</title>
