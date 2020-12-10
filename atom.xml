@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2020-12-10T02:20:30.554Z</updated>
+  <updated>2020-12-10T02:29:33.334Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://example.com/2020/12/10/package-management/"/>
     <id>http://example.com/2020/12/10/package-management/</id>
     <published>2020-12-10T01:33:29.000Z</published>
-    <updated>2020-12-10T02:20:30.554Z</updated>
+    <updated>2020-12-10T02:29:33.334Z</updated>
     
     <content type="html"><![CDATA[<p>npm and yarn package management common command</p><h1 id="npm和yarn命令"><a href="#npm和yarn命令" class="headerlink" title="npm和yarn命令"></a>npm和yarn命令</h1><h2 id="查看版本"><a href="#查看版本" class="headerlink" title="查看版本"></a>查看版本</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm -v</span><br><span class="line">$ yarn -v</span><br></pre></td></tr></table></figure><h2 id="yarn安装"><a href="#yarn安装" class="headerlink" title="yarn安装"></a>yarn安装</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm i yarn -g</span><br></pre></td></tr></table></figure><h2 id="npm-yarn"><a href="#npm-yarn" class="headerlink" title="npm\yarn"></a>npm\yarn</h2><table><thead><tr><th align="center">npm</th><th align="center">yarn</th><th align="center">说明</th></tr></thead><tbody><tr><td align="center">npm init</td><td align="center">yarn init</td><td align="center">初始化某个项目</td></tr><tr><td align="center">npm install/link</td><td align="center">yarn/ yarn install</td><td align="center">默认的安装项目所有依赖</td></tr><tr><td align="center">npm install -S pkg@version</td><td align="center">yarn add pkg@version</td><td align="center">安装某个依赖包（dependencies）</td></tr><tr><td align="center">npm uninstall -S pkg@version</td><td align="center">yarn remove pkg@version</td><td align="center">移除某个依赖包</td></tr><tr><td align="center">npm install -D pkg@version</td><td align="center">yarn add pkg@version -D</td><td align="center">安装某个开发时（devDependencies）的依赖包</td></tr><tr><td align="center">npm update -S pkg@version</td><td align="center">yarn update pkg@version</td><td align="center">更新某个依赖包</td></tr><tr><td align="center">npm install –global/-g pkg@version</td><td align="center">yarn global add pkg@version</td><td align="center">安装某个全局依赖包（整个环境）</td></tr><tr><td align="center">npm run/test xxx</td><td align="center">yarn xxx</td><td align="center">运行某个命令</td></tr><tr><td align="center">npm run serve</td><td align="center">yarn serve</td><td align="center">本地编译运行命令</td></tr><tr><td align="center">npm info pkg</td><td align="center">yarn info pkg</td><td align="center">显示某个pkg包信息</td></tr><tr><td align="center">npm list</td><td align="center">yarn list</td><td align="center">列出项目的所有依赖</td></tr><tr><td align="center">npm config</td><td align="center">yarn config</td><td align="center">管理 yarn 配置文件</td></tr><tr><td align="center">npm config list</td><td align="center">yarn config list</td><td align="center">显示当前配置</td></tr></tbody></table><h3 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h3><p>在package.json中的两个字段：<br>dependencies：是在生产环境中运行需要的安装包<br>devDependencies：是在开发环境中需要安装的依赖包</p>]]></content>
     
@@ -30,26 +30,6 @@
       
     <summary type="html">&lt;p&gt;npm and yarn package management common command&lt;/p&gt;
 &lt;h1 id=&quot;npm和yarn命令&quot;&gt;&lt;a href=&quot;#npm和yarn命令&quot; class=&quot;headerlink&quot; title=&quot;npm和yarn命令&quot;&gt;&lt;/a&gt;np</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Github Pages + Hexo 搭建个人博客</title>
-    <link href="http://example.com/2020/12/04/gitpage-hexo-blog/"/>
-    <id>http://example.com/2020/12/04/gitpage-hexo-blog/</id>
-    <published>2020-12-04T01:51:06.981Z</published>
-    <updated>2020-12-08T02:15:16.233Z</updated>
-    
-    <content type="html"><![CDATA[<p>github.io是每个Github账号可以免费拥有的一个域名，这个域名上部署的页面，称之为Github Pages，用户有高度自主权去DIY自己的“个人网站”。<br>通常，用户会将其用来作为自己的博客网站，存放一些博客、收藏、简历等，业界比较成熟的个人博客网站模板是Hexo，它基于Node.js，能快速生成一套可运行成博客页面的代码，用户将自己的文章加入并配置好相关信息，然后编译，推送到github.io仓库中，Github会自动将页面部署到服务器。不仅如此，Hexo上提供丰富多样的模板主题，可供选择。</p><h2 id="git除了存储生成的静态页面，还要存放hexo开发代码"><a href="#git除了存储生成的静态页面，还要存放hexo开发代码" class="headerlink" title="git除了存储生成的静态页面，还要存放hexo开发代码"></a>git除了存储生成的静态页面，还要存放hexo开发代码</h2><p>本地和发布分支<br>一个分支用来存放Hexo生成的网站原始的文件，另一个分支用来存放生成的静态网页</p><h3 id="从hexo分支下载后的代码部署方式："><a href="#从hexo分支下载后的代码部署方式：" class="headerlink" title="从hexo分支下载后的代码部署方式："></a>从hexo分支下载后的代码部署方式：</h3><h4 id="npm安装packge-json依赖到node-modules"><a href="#npm安装packge-json依赖到node-modules" class="headerlink" title="npm安装packge.json依赖到node_modules"></a>npm安装packge.json依赖到node_modules</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install</span><br></pre></td></tr></table></figure><h4 id="hexo-编译"><a href="#hexo-编译" class="headerlink" title="hexo 编译"></a>hexo 编译</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br></pre></td></tr></table></figure><h4 id="hexo-部署到github-page域名"><a href="#hexo-部署到github-page域名" class="headerlink" title="hexo 部署到github page域名"></a>hexo 部署到github page域名</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d</span><br></pre></td></tr></table></figure><h2 id="zhouxlt-github-io访问不了"><a href="#zhouxlt-github-io访问不了" class="headerlink" title="zhouxlt.github.io访问不了"></a>zhouxlt.github.io访问不了</h2><h3 id="ping域名，看到了ip"><a href="#ping域名，看到了ip" class="headerlink" title="ping域名，看到了ip"></a>ping域名，看到了ip</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ping zhouxlt.github.io</span><br></pre></td></tr></table></figure><p><img src="ping%E5%9F%9F%E5%90%8D%E7%BB%93%E6%9E%9C%E5%9B%BE.png" alt="ping zhouxlt.github.io结果图" title="ping域名"></p><h3 id="以太网Internet4协议配置"><a href="#以太网Internet4协议配置" class="headerlink" title="以太网Internet4协议配置"></a>以太网Internet4协议配置</h3><p><img src="%E4%BB%A5%E5%A4%AA%E7%BD%91%E9%85%8D%E7%BD%AEInternet4DNS%E6%9C%8D%E5%8A%A1%E5%99%A8.png" alt="配置DNS服务器" title="配置DNS服务器"></p><h3 id="监测网络中DNS服务器是否能正确实现域名解析"><a href="#监测网络中DNS服务器是否能正确实现域名解析" class="headerlink" title="监测网络中DNS服务器是否能正确实现域名解析"></a>监测网络中DNS服务器是否能正确实现域名解析</h3><p><img src="%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90.png" alt="监测域名解析" title="监测域名解析"></p><h3 id="刷新DNS缓存"><a href="#刷新DNS缓存" class="headerlink" title="刷新DNS缓存"></a>刷新DNS缓存</h3><p><img src="%E5%88%B7%E6%96%B0DNS%E7%BC%93%E5%AD%98.png" alt="刷新DNS缓存" title="刷新DNS缓存"></p><h3 id="翻墙！！"><a href="#翻墙！！" class="headerlink" title="翻墙！！"></a>翻墙！！</h3><p>一顿操作~~~结果是因为要翻墙~~~</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;github.io是每个Github账号可以免费拥有的一个域名，这个域名上部署的页面，称之为Github Pages，用户有高度自主权去DIY自己的“个人网站”。&lt;br&gt;通常，用户会将其用来作为自己的博客网站，存放一些博客、收藏、简历等，业界比较成熟的个人博客网站模板是He</summary>
       
     
     
@@ -70,6 +50,26 @@
       
       
     <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Github Pages + Hexo 搭建个人博客</title>
+    <link href="http://example.com/2020/12/04/gitpage-hexo-blog/"/>
+    <id>http://example.com/2020/12/04/gitpage-hexo-blog/</id>
+    <published>2020-12-04T01:51:06.981Z</published>
+    <updated>2020-12-10T10:40:57.392Z</updated>
+    
+    <content type="html"><![CDATA[<p>github.io是每个Github账号可以免费拥有的一个域名，这个域名上部署的页面，称之为Github Pages，用户有高度自主权去DIY自己的“个人网站”。<br>通常，用户会将其用来作为自己的博客网站，存放一些博客、收藏、简历等，业界比较成熟的个人博客网站模板是Hexo，它基于Node.js，能快速生成一套可运行成博客页面的代码，用户将自己的文章加入并配置好相关信息，然后编译，推送到github.io仓库中，Github会自动将页面部署到服务器。不仅如此，Hexo上提供丰富多样的模板主题，可供选择。</p><h1 id="Github-Pages-Hexo-搭建个人博客"><a href="#Github-Pages-Hexo-搭建个人博客" class="headerlink" title="Github Pages + Hexo 搭建个人博客"></a>Github Pages + Hexo 搭建个人博客</h1><h2 id="Github-Pages"><a href="#Github-Pages" class="headerlink" title="Github Pages"></a>Github Pages</h2><h3 id="创建Github-Pages"><a href="#创建Github-Pages" class="headerlink" title="创建Github Pages"></a>创建Github Pages</h3><p>配置好git和GitHub后，需要在GitHub上创建Github Pages服务<br><img src="github-page.png" alt="Github Page创建" title="Github Page"><br>GitHub可以配置下SSH连接公钥</p><h2 id="安装Hexo并初始化博客"><a href="#安装Hexo并初始化博客" class="headerlink" title="安装Hexo并初始化博客"></a>安装Hexo并初始化博客</h2><p>###安装Hexo及验证</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br><span class="line">$ hexo -v</span><br></pre></td></tr></table></figure><h2 id="初始化项目"><a href="#初始化项目" class="headerlink" title="初始化项目"></a>初始化项目</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init &#123;name&#125;</span><br></pre></td></tr></table></figure><table><thead><tr><th align="center">hexo命令</th><th align="center">简写</th><th align="center">说明</th></tr></thead><tbody><tr><td align="center">hexo clean</td><td align="center"></td><td align="center">清除缓存</td></tr><tr><td align="center">hexo generate</td><td align="center">hexo g</td><td align="center">编译</td></tr><tr><td align="center">hexo serve</td><td align="center">hexo s</td><td align="center">本地运行</td></tr><tr><td align="center">hexo deploy</td><td align="center">hexo d</td><td align="center">部署</td></tr><tr><td align="center">hexo new {blogName}</td><td align="center"></td><td align="center">新建博客（文件夹及md文件）</td></tr></tbody></table><h3 id="hexo-deply部署命令之前"><a href="#hexo-deply部署命令之前" class="headerlink" title="hexo deply部署命令之前"></a>hexo deply部署命令之前</h3><h4 id="额外安装一个支持-Git-的部署插件-hexo-deployer-git："><a href="#额外安装一个支持-Git-的部署插件-hexo-deployer-git：" class="headerlink" title="额外安装一个支持 Git 的部署插件-hexo-deployer-git："></a>额外安装一个支持 Git 的部署插件-hexo-deployer-git：</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -S hexo-deployer-git</span><br></pre></td></tr></table></figure><h4 id="config-yml中配置部署地址"><a href="#config-yml中配置部署地址" class="headerlink" title="_config.yml中配置部署地址"></a>_config.yml中配置部署地址</h4><p><img src="github%E9%83%A8%E7%BD%B2%E5%9C%B0%E5%9D%80.png" alt="hexo部署到github的地址"></p><h4 id="运行部署命令后https-username-github-io-可以访问个人博客"><a href="#运行部署命令后https-username-github-io-可以访问个人博客" class="headerlink" title="运行部署命令后https://{username}.github.io/可以访问个人博客"></a>运行部署命令后https://{username}.github.io/可以访问个人博客</h4><h3 id="可以选择hexo博客主题-config-yml中的theme"><a href="#可以选择hexo博客主题-config-yml中的theme" class="headerlink" title="可以选择hexo博客主题_config.yml中的theme"></a>可以选择hexo博客主题_config.yml中的theme</h3><h1 id="git除了存储生成的静态页面，还要存放hexo开发代码"><a href="#git除了存储生成的静态页面，还要存放hexo开发代码" class="headerlink" title="git除了存储生成的静态页面，还要存放hexo开发代码"></a>git除了存储生成的静态页面，还要存放hexo开发代码</h1><p>本地和发布分支<br>一个分支用来存放Hexo生成的网站原始的文件，另一个分支用来存放生成的静态网页</p><h2 id="从hexo分支下载后的代码部署方式："><a href="#从hexo分支下载后的代码部署方式：" class="headerlink" title="从hexo分支下载后的代码部署方式："></a>从hexo分支下载后的代码部署方式：</h2><h3 id="npm安装packge-json依赖到node-modules"><a href="#npm安装packge-json依赖到node-modules" class="headerlink" title="npm安装packge.json依赖到node_modules"></a>npm安装packge.json依赖到node_modules</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install</span><br></pre></td></tr></table></figure><h3 id="hexo-编译"><a href="#hexo-编译" class="headerlink" title="hexo 编译"></a>hexo 编译</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br></pre></td></tr></table></figure><h3 id="hexo-部署到github-page域名"><a href="#hexo-部署到github-page域名" class="headerlink" title="hexo 部署到github page域名"></a>hexo 部署到github page域名</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d</span><br></pre></td></tr></table></figure><h1 id="zhouxlt-github-io访问不了"><a href="#zhouxlt-github-io访问不了" class="headerlink" title="zhouxlt.github.io访问不了"></a>zhouxlt.github.io访问不了</h1><h2 id="ping域名，看到了ip"><a href="#ping域名，看到了ip" class="headerlink" title="ping域名，看到了ip"></a>ping域名，看到了ip</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ping zhouxlt.github.io</span><br></pre></td></tr></table></figure><p><img src="ping%E5%9F%9F%E5%90%8D%E7%BB%93%E6%9E%9C%E5%9B%BE.png" alt="ping zhouxlt.github.io结果图" title="ping域名"></p><h2 id="以太网Internet4协议配置"><a href="#以太网Internet4协议配置" class="headerlink" title="以太网Internet4协议配置"></a>以太网Internet4协议配置</h2><p><img src="%E4%BB%A5%E5%A4%AA%E7%BD%91%E9%85%8D%E7%BD%AEInternet4DNS%E6%9C%8D%E5%8A%A1%E5%99%A8.png" alt="配置DNS服务器" title="配置DNS服务器"></p><h2 id="监测网络中DNS服务器是否能正确实现域名解析"><a href="#监测网络中DNS服务器是否能正确实现域名解析" class="headerlink" title="监测网络中DNS服务器是否能正确实现域名解析"></a>监测网络中DNS服务器是否能正确实现域名解析</h2><p><img src="%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90.png" alt="监测域名解析" title="监测域名解析"></p><h2 id="刷新DNS缓存"><a href="#刷新DNS缓存" class="headerlink" title="刷新DNS缓存"></a>刷新DNS缓存</h2><p><img src="%E5%88%B7%E6%96%B0DNS%E7%BC%93%E5%AD%98.png" alt="刷新DNS缓存" title="刷新DNS缓存"></p><h2 id="翻墙！！"><a href="#翻墙！！" class="headerlink" title="翻墙！！"></a>翻墙！！</h2><p>一顿操作~~~结果是因为要翻墙~~~</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;github.io是每个Github账号可以免费拥有的一个域名，这个域名上部署的页面，称之为Github Pages，用户有高度自主权去DIY自己的“个人网站”。&lt;br&gt;通常，用户会将其用来作为自己的博客网站，存放一些博客、收藏、简历等，业界比较成熟的个人博客网站模板是He</summary>
       
     
     
