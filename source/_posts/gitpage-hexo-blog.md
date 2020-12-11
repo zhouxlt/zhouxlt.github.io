@@ -24,8 +24,8 @@ $ hexo init {name}
 ```
 | hexo命令 | 简写 | 说明 | 详述 |
 | :---:| :---: | :---: |:---: |
-|hexo clean| hexo c|清除本地缓存|清除public/文件夹和db.json文件|
-|hexo generate| hexo g |编译|将souce下的Markdown和HTML文件解析到了public下，并生成了db.json文件|
+|hexo clean||清除本地缓存|清除public/文件夹和db.json文件|
+|hexo generate| hexo g |编译|解析source的md、html文件到public，生成db.json|
 |hexo serve|hexo s|本地运行|开启本地调试模式|
 |hexo deploy|hexo d|部署|将本地资源部署到GithubPages|
 |hexo new [layout] {title}||新建博客（文件夹及md文件）|一般忽略layout可选参数，默认为scaffolds模板的post|
@@ -90,7 +90,7 @@ theme: {themeName}
 ```
 ## 重新编译可以看到新的主题应用到博客
 ``` bash
-$ hexo c
+$ hexo clean
 $ hexo g
 $ hexo s
 ```
