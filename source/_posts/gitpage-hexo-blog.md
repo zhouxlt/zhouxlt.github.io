@@ -29,6 +29,7 @@ $ hexo init {name}
 |hexo serve|hexo s|本地运行|开启本地调试模式|
 |hexo deploy|hexo d|部署|将本地资源部署到GithubPages|
 |hexo new [layout] {title}||新建博客（文件夹及md文件）|一般忽略layout可选参数，默认为scaffolds模板的post|
+|hexo help||查询hexo命令|
 
 ### hexo deply部署
 #### 安装插件hexo-deployer-git
