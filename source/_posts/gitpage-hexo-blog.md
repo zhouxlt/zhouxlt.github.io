@@ -88,6 +88,9 @@ $ git clone https://github.com/iissnan/hexo-theme-next themes/next
 ``` yaml
 theme: {themeName}
 ```
+## 其他主题配置项
+参考[主题配置项](http://www.c-hasel.cn/2019/12/01/hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%BA%8C)
+[参考博客样式](http://www.c-hasel.cn/)
 ## 重新编译可以看到新的主题应用到博客
 ``` bash
 $ hexo clean
