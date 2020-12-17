@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2020-12-10T02:29:33.334Z</updated>
+  <updated>2020-12-17T03:01:14.514Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>nodejs-project（Egg框架）</title>
+    <link href="http://example.com/2020/12/15/nodejs-project/"/>
+    <id>http://example.com/2020/12/15/nodejs-project/</id>
+    <published>2020-12-15T07:18:12.000Z</published>
+    <updated>2020-12-17T03:01:14.514Z</updated>
+    
+    <content type="html"><![CDATA[<p>使用nodejs在vue与java之间过渡一层，下面介绍使用nodejs搭建中间层后端项目<br>参考<a href="https://eggjs.org/zh-cn/intro/quickstart.html">eggjs官网</a></p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="全局安装Egg-NodeJS前端框架脚手架"><a href="#全局安装Egg-NodeJS前端框架脚手架" class="headerlink" title="全局安装Egg NodeJS前端框架脚手架"></a>全局安装Egg NodeJS前端框架脚手架</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm i -g egg-init</span><br></pre></td></tr></table></figure><h3 id="创建项目"><a href="#创建项目" class="headerlink" title="创建项目"></a>创建项目</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ egg-init &#123;projectName&#125; [--<span class="built_in">type</span>=simple]</span><br></pre></td></tr></table></figure><h3 id="进入项目安装依赖"><a href="#进入项目安装依赖" class="headerlink" title="进入项目安装依赖"></a>进入项目安装依赖</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm i</span><br></pre></td></tr></table></figure><h3 id="本地启动项目"><a href="#本地启动项目" class="headerlink" title="本地启动项目"></a>本地启动项目</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm run dev</span><br></pre></td></tr></table></figure><h3 id="安装NodeJS中间件、第三方模块和数据库"><a href="#安装NodeJS中间件、第三方模块和数据库" class="headerlink" title="安装NodeJS中间件、第三方模块和数据库"></a>安装NodeJS中间件、第三方模块和数据库</h3><blockquote><ol><li>安装mysql数据库使用</li></ol></blockquote><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">$ npm i -s egg-mysql</span><br><span class="line"><span class="comment"># 若线上环境没用到mysql数据库，则不要配置下列项，启动加载时会找不到而报错</span></span><br><span class="line">$ 在config/plugin.js里声明插件</span><br><span class="line">exports.mysql = &#123;</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span>,</span><br><span class="line">  package: <span class="string">&#x27;egg-mysql&#x27;</span>,</span><br><span class="line">&#125;;</span><br><span class="line">$ 在config/config.default.js里配置</span><br><span class="line">config.mysql = &#123;</span><br><span class="line">  <span class="comment"># 单数据库信息配置</span></span><br><span class="line">  client: &#123;</span><br><span class="line">    host: <span class="string">&#x27;localhost&#x27;</span>,</span><br><span class="line">    port: <span class="string">&#x27;3306&#x27;</span>,</span><br><span class="line">    user: <span class="string">&#x27;****&#x27;</span>,</span><br><span class="line">    password: <span class="string">&#x27;*******&#x27;</span>,</span><br><span class="line">    database: <span class="string">&#x27;egg&#x27;</span>,</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="comment"># 是否加载到 app 上，默认开启</span></span><br><span class="line">  app: <span class="literal">true</span>,</span><br><span class="line">  <span class="comment"># 是否加载到 agent 上，默认关闭</span></span><br><span class="line">  agent: <span class="literal">false</span>,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><h2 id="开发应用模式"><a href="#开发应用模式" class="headerlink" title="开发应用模式"></a>开发应用模式</h2><h3 id="请求响应模式"><a href="#请求响应模式" class="headerlink" title="请求响应模式"></a>请求响应模式</h3><p>Router -&gt; Controller -&gt; Service -&gt; MySQL</p><blockquote><ol><li>Router路由</li></ol></blockquote><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">router.get(<span class="string">&#x27;/email&#x27;</span>, controller.email.getEmails);</span><br></pre></td></tr></table></figure><p>controller.email的email是app/controller文件夹下的email.js文件，<br>email.js中的controller类必须导出才能使用（module.exports = EmailController;）<br>controller.email.getEmails中的getEmails是email.js文件类中的一个方法<br>当前端访问到该路由时，就是调用emailjs勒种的getEmails方法  </p><blockquote><ol start="2"><li>Controller控制器</li></ol></blockquote><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">async</span> <span class="function"><span class="title">getEmails</span>(<span class="params"></span>)</span> &#123;</span><br><span class="line">  <span class="keyword">const</span> ctx = <span class="built_in">this</span>.ctx;</span><br><span class="line">  <span class="keyword">const</span> emails = <span class="keyword">await</span> ctx.service.email.getEmails();</span><br><span class="line">  ctx.body = emails;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><p>在controller的getEmails方法中通过ctx调用service<br>ctx.service.email的email是app/service文件夹下的email.js文件，<br>email.js中的service类必须导出才能被调用（module.exports = EmailService;）<br>ctx.service.email.getEmails()中的getEmails是文件类中的一个方法<br>当路由调用到controller类方法，在controller方法中会调用service类的方法  </p><blockquote><ol start="3"><li>Service服务</li></ol></blockquote><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">async</span> <span class="function"><span class="title">getEmails</span>(<span class="params"></span>)</span> &#123;</span><br><span class="line">  <span class="keyword">let</span> sql = <span class="string">&#x27;select accountId from email&#x27;</span>;</span><br><span class="line">  <span class="keyword">const</span> emails = <span class="keyword">await</span> <span class="built_in">this</span>.app.mysql.query(sql);</span><br><span class="line">  <span class="keyword">return</span> emails;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><p>在service的getEmails方法中通过this.app调用mysql<br>await this.app.mysql.query(sql)异步调用mysql的查询sql语句，查询数据库  </p><p>获取数据return到controller，controller将其赋给ctx.body，前端会接收到返回数据  </p><blockquote><ol start="4"><li>MySQL数据库</li></ol></blockquote><p>通过/config/中的配置连接到环境中的数据库，运行sql语句，并将结果返回  </p><blockquote><p>controller负责与前端数据格式交互；service负责与数据库交互数据处理</p></blockquote><h3 id="自动调用（定时任务）模式"><a href="#自动调用（定时任务）模式" class="headerlink" title="自动调用（定时任务）模式"></a>自动调用（定时任务）模式</h3><p>参考文档<a href="https://eggjs.org/zh-cn/basics/schedule.html">eggjs定时任务</a></p><ol><li>app/schedule目录下建立定时任务文件send_email.js</li><li>依赖Subscription，通过 schedule 属性来设置定时任务的执行间隔等配置（interval或者cron）；<br>subscribe 是真正定时任务执行时被运行的函数</li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;使用nodejs在vue与java之间过渡一层，下面介绍使用nodejs搭建中间层后端项目&lt;br&gt;参考&lt;a href=&quot;https://eggjs.org/zh-cn/intro/quickstart.html&quot;&gt;eggjs官网&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Quick-</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>npm和yarn常见命令</title>
@@ -38,6 +59,26 @@
   </entry>
   
   <entry>
+    <title>Hello Hexo</title>
+    <link href="http://example.com/2020/12/04/hello-world/"/>
+    <id>http://example.com/2020/12/04/hello-world/</id>
+    <published>2020-12-04T01:51:06.981Z</published>
+    <updated>2020-12-11T09:24:17.264Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>Github Pages + Hexo 搭建个人博客</title>
     <link href="http://example.com/2020/12/04/gitpage-hexo-blog/"/>
     <id>http://example.com/2020/12/04/gitpage-hexo-blog/</id>
@@ -50,26 +91,6 @@
       
       
     <summary type="html">&lt;p&gt;参考：&lt;a href=&quot;https://juejin.cn/post/6844904131266609165%EF%BC%9Bhttps://zhuanlan.zhihu.com/p/35668237&quot;&gt;https://juejin.cn/post/684490413126</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://example.com/2020/12/04/hello-world/"/>
-    <id>http://example.com/2020/12/04/hello-world/</id>
-    <published>2020-12-04T01:51:06.981Z</published>
-    <updated>2020-12-05T09:04:48.479Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
       
     
     
