@@ -4154,7 +4154,7 @@ _:future,
   z-index: 99999 !important;
 }
 .mermaid {
-  overflow: auto;
+  overflow: visible;
   margin: 0 0 1rem;
   background: #fff;
   text-align: center;
@@ -4181,18 +4181,18 @@ _:future,
   padding: 0.3rem 0 0.8em;
 }
 .katex-wrap {
-  overflow: auto;
+  overflow: visible;
 }
 .katex-wrap::-webkit-scrollbar {
   display: none;
 }
 .mathjax-overflow {
-  overflow-x: auto;
-  overflow-y: hidden;
+  overflow-x: visible;
+  overflow-y: visible;
 }
-mjx-container[jax='CHTML'][display='true'] {
-  overflow-x: auto;
-  overflow-y: hidden;
+mjx-container[jax='CHTML'][display='false'] {
+  overflow-x: visible;
+  overflow-y: visible;
   padding-bottom: 0.3rem;
 }
 .aplayer {
