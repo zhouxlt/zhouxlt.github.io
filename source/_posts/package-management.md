@@ -1,5 +1,6 @@
 ---
 title: npm和yarn常见命令
+cover: /img/star4.jpg
 date: 2020-12-10 09:33:29
 tags:
 ---

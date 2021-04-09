@@ -1,5 +1,7 @@
 ---
 title: nodejs-project（Egg框架）
+cover: /img/solar-system.jpg
+# top_img: /img/universe1.jpg
 date: 2020-12-15 15:18:12
 tags:
 ---

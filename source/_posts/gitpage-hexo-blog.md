@@ -1,5 +1,6 @@
 ---
 title: Github Pages + Hexo 搭建个人博客
+cover: /img/stars.jpg
 ---
 参考：https://juejin.cn/post/6844904131266609165；https://zhuanlan.zhihu.com/p/35668237
 github.io是每个Github账号可以免费拥有的一个域名，这个域名上部署的页面，称之为Github Pages，用户有高度自主权去DIY自己的“个人网站”。
