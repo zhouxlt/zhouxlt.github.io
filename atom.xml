@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-05-17T06:14:46.492Z</updated>
+  <updated>2021-05-19T05:51:59.861Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://example.com/2021/05/17/interview/"/>
     <id>http://example.com/2021/05/17/interview/</id>
     <published>2021-05-17T05:19:07.476Z</published>
-    <updated>2021-05-17T06:14:46.492Z</updated>
+    <updated>2021-05-19T05:51:59.861Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h1><h2 id="盒子模型"><a href="#盒子模型" class="headerlink" title="盒子模型"></a>盒子模型</h2><blockquote><p>盒子模型<br>box-sizing</p></blockquote>]]></content>
+    <content type="html"><![CDATA[<h1 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h1><h2 id="盒子模型"><a href="#盒子模型" class="headerlink" title="盒子模型"></a>盒子模型</h2><blockquote><p>盒子模型<br>box-sizing</p></blockquote><h2 id="选择器"><a href="#选择器" class="headerlink" title="选择器"></a>选择器</h2><p><a href="https://www.jianshu.com/p/aaa15ecb6233">参考</a>  </p><ol><li>13种选择器  </li><li>CSS 中哪些属性可以继承  </li><li>权重：<br>当有多个规则都能应用于同一个元素时，权重越高的样式将被优先采用。<br>important &gt; 内联样式 &gt; ID选择器 &gt; 类选择器 | 伪类选择器 | 属性选择器 &gt; 标签选择器 | 伪元素选择器 &gt; 通配符 &gt; 继承 &gt; 浏览器默认属性<br>##</li></ol>]]></content>
     
     
       
@@ -37,13 +37,13 @@
   </entry>
   
   <entry>
-    <title>古诗词</title>
+    <title>古诗词 - 腹有诗书气自华</title>
     <link href="http://example.com/2021/05/17/%E5%8F%A4%E8%AF%97%E8%AF%8D/"/>
     <id>http://example.com/2021/05/17/%E5%8F%A4%E8%AF%97%E8%AF%8D/</id>
     <published>2021-05-17T05:05:42.041Z</published>
-    <updated>2021-05-17T09:18:35.640Z</updated>
+    <updated>2021-05-19T05:33:10.540Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="李白"><a href="#李白" class="headerlink" title="李白"></a>李白</h1><h2 id="将进酒"><a href="#将进酒" class="headerlink" title="将进酒"></a>将进酒</h2><blockquote><p>2021/5/17  </p></blockquote><p>君不见黄河之水天上来，奔流到海不复回。<br>君不见高堂明镜悲白发，朝如青丝暮成雪。</p><p>人生得意须尽欢，莫使金樽空对月。<br>天生我材必有用，千金散尽还复来。</p><p>烹羊宰牛且为乐，会须一饮三百杯。<br>岑夫子，丹丘生，将进酒，杯莫停。</p><p>与君歌一曲，请君为我倾耳听。</p><p>钟鼓馔玉不足贵，但愿长醉不复醒。<br>古来圣贤皆寂寞，惟有饮者留其名。<br>陈王昔时宴平乐，斗酒十千恣欢谑。<br>主人何为言少钱，径须沽取对君酌。</p><p>五花马，千金裘，呼儿将出换美酒，与尔同销万古愁。</p><h1 id="梁启超"><a href="#梁启超" class="headerlink" title="梁启超"></a>梁启超</h1><h2 id="少年中国说-选段"><a href="#少年中国说-选段" class="headerlink" title="少年中国说 选段"></a>少年中国说 选段</h2><blockquote><p>2021/5/17    </p></blockquote><p>使举国之少年而果为少年也，则吾中国为未来之国，其进步未可量也；使举国之少年而亦为老大也，则吾中国为过去之国，其澌亡可翘足而待也。故今日之责任，不在他人，而全在我少年。少年智则国智，少年富则国富，少年强则国强，少年独立则国独立，少年自由则国自由，少年进步则国进步，少年胜于欧洲，则国胜于欧洲，少年雄于地球，则国雄于地球。红日初升，其道大光；河出伏流，一泻汪洋。潜龙腾渊，鳞爪飞扬；乳虎啸谷，百兽震惶；鹰隼试翼，风尘吸张。奇花初胎，矞矞皇皇；干将发硎，有作其芒。天戴其苍，地履其黄，纵有千古，横有八荒，前途似海，来日方长。美哉我少年中国，与天不老；壮哉我中国少年，与国无疆。</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="李白"><a href="#李白" class="headerlink" title="李白"></a>李白</h1><h2 id="将进酒"><a href="#将进酒" class="headerlink" title="将进酒"></a>将进酒</h2><blockquote><p>2021/5/17  </p></blockquote><p>君不见黄河之水天上来，奔流到海不复回。<br>君不见高堂明镜悲白发，朝如青丝暮成雪。</p><p>人生得意须尽欢，莫使金樽空对月。<br>天生我材必有用，千金散尽还复来。</p><p>烹羊宰牛且为乐，会须一饮三百杯。<br>岑夫子，丹丘生，将进酒，杯莫停。</p><p>与君歌一曲，请君为我倾耳听。</p><p>钟鼓馔玉不足贵，但愿长醉不复醒。<br>古来圣贤皆寂寞，惟有饮者留其名。<br>陈王昔时宴平乐，斗酒十千恣欢谑。<br>主人何为言少钱，径须沽取对君酌。</p><p>五花马，千金裘，呼儿将出换美酒，与尔同销万古愁。</p><h1 id="梁启超"><a href="#梁启超" class="headerlink" title="梁启超"></a>梁启超</h1><h2 id="少年中国说-选段"><a href="#少年中国说-选段" class="headerlink" title="少年中国说 选段"></a>少年中国说 选段</h2><blockquote><p>2021/5/18   </p></blockquote><p>使举国之少年而果为少年也，则吾中国为未来之国，其进步未可量也；使举国之少年而亦为老大也，则吾中国为过去之国，其澌亡可翘足而待也。<br>故今日之责任，不在他人，而全在我少年。少年智则国智，少年富则国富，少年强则国强，少年独立则国独立，少年自由则国自由，少年进步则国进步，少年胜于欧洲，则国胜于欧洲，少年雄于地球，则国雄于地球。红日初升，其道大光；河出伏流，一泻汪洋。潜龙腾渊，鳞爪飞扬；乳虎啸谷，百兽震惶；鹰隼试翼，风尘吸张。奇花初胎，矞矞皇皇；干将发硎，有作其芒。天戴其苍，地履其黄，纵有千古，横有八荒，前途似海，来日方长。美哉我少年中国，与天不老；壮哉我中国少年，与国无疆。</p><h1 id="岳飞"><a href="#岳飞" class="headerlink" title="岳飞"></a>岳飞</h1><h2 id="满江红"><a href="#满江红" class="headerlink" title="满江红"></a>满江红</h2><p>怒发冲冠，凭栏处、潇潇雨歇。抬望眼，仰天长啸，壮怀激烈。三十功名尘与土，八千里路云和月。莫等闲，白了少年头，空悲切！</p><p>靖康耻，犹未雪。臣子恨，何时灭！驾长车，踏破贺兰山缺。壮志饥餐胡虏肉，笑谈渴饮匈奴血。待从头、收拾旧山河，朝天阙。</p>]]></content>
     
     
       
